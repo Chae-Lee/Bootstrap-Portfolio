@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kate Chaerin Lee // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
   rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
   crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / Navbar -->
+<!-- main logo / Navbar -->
   <header>
     <nav class="navbar navbar-expand-xxl bg-info-subtle">
       <div class="container-fluid" id="headerName">
@@ -23,83 +23,190 @@
         </span>
         <div class="collapse navbar-collapse position-absolute top-0 end-0" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item fs-3 px-2">
               <a class="nav-link active" aria-current="page" href="#headline">About Me</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item fs-3 px-2">
               <a class="nav-link" href="#workTitle">Work</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactMe">Contact Me</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item fs-3 px-2">
               <a class="nav-link" href="#">CV</a>
+            </li>
+            <li class="nav-item fs-3 px-2">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item fs-3 px-2">
+              <a class="nav-link" href="#contactMe">Contact Me</a>
             </li>
           </ul>
         </div>
+        <img src="./images/katelee-thumbnail.png" alt="Image of Kate Lee" class="img-thumbnail rounded-5 float-start mt-5" style="height:150px">
       </div>
     </nav>
   </header>
 
-  <!-- hero banner image -->
-  <div class="jumbotron hero-banner" style="background-image: url(./images/02-portfolio-3.jpg); background-size: auto; height: 270px;">
-    <span class="d-inline-block position-absolute top-50 end-0 translate-middle-y border p-2 bg-info bg-opacity-10 bg-primary-subtle" style="width:auto;" id="hero-image">
-      <h3 class="display-6 ">Frontend Web Developer </h3>
+<!-- hero banner image using jumbotron feature -->
+  <div class="jumbotron hero-banner " style="background-image: url(./images/02-portfolio-3.jpg); background-size: auto; height: 200px;">
+    <span class="border p-2 bg-info bg-opacity-10 bg-primary-subtle" style="width:auto;" id="hero-image">
+      <h3 class="display-6 mt-5 text-end p-5" id="jobTitle">Frontend Web Developer </h3>
     </span>
   </div>
 
-  <!--Grid Sections-->
+<!--Grid Sections-->
   <main class="page-wrapper">
-    <!-- About Me section -->
+<!-- About Me section -->
     <section class="page-section" id="about">
-      <div id="headline">
-        <h3>About Me</h3>
-      </div>
-      <div id="aboutMe">
-        <p> Hello my name is Kate and I am currently learning Frontend Web development. This is my portfolio where I will be showcasing projects I have been working on. </p>
-        <p> I will be seeking a position as a Frontend Web Developer once I have completed my bootcamp.</p>
+      <div class="container text-center" id="headLine">
+        <div class="row">
+          <div class="col-sm-3 text-primary-emphasis mt-3">
+            <h3>About Me</h3>
+          </div>
+          <div class="col-sm-9 text-start mt-3 fs-4"> 
+            <p> Hello my name is Kate and I am currently learning Frontend Web development. This is my portfolio where I will be showcasing projects I have been working on. Currently only the porjects I have completed are shown below. </p>
+            <p> I will be seeking a position as a Frontend Web Developer once I have completed my bootcamp.</p>
+          </div>
+        </div>
       </div>
     </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <div id="workTitle">
+    
+<!-- Portfolio Work section that displays bootstrap cards-->
+<section class="page-section pt-5" id="work">
+  <div class="container text-center" id="workTitle">
+    <div class="row">
+      <div class="col-sm-3 mt-3">
         <h3>Work</h3>
       </div>
-      <div id="workExamples" class="workGrid" >
-        <div id="refactor" class="workGridArea">
-          <a href="https://chae-lee.github.io/Market-website-refactor/" target="_blank"><div class="heading"> Market Website Refactor </div></a>
-        </div>
-        <div id="LED" class="workGridArea">
-          <div class="heading" > LED </div>
-        </div>
-        <div id="calculator" class="workGridArea">
-          <div class="heading" > Calculator </div>
-        </div>
-        <div id="pastelPuzzles" class="workGridArea">
-          <div class="heading" > Pastel Puzzles </div>
-        </div>
-        <div id="runBuddy" class="workGridArea">
-          <a href=""><div class="heading"> Run Buddy </div></a>
+      <div class="col-sm-9 mt-3" id="workExamples">
+        <div>
+          <div id="workGridArea" class="row">
+            <div class="card pt-2">
+              <img src="./images/marketplace.jpeg" class="card-img-top" alt="Marketplace image" style="height: 240px">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Agency Website Refactor</h5>
+                <p class="card-text">Refactoring of Horiseon Marketing Agency Website </p>
+                <a href="https://chae-lee.github.io/Market-website-refactor/" target="_blank" class="btn btn-primary">Click to view project</a>
+              </div>
+            </div>
+            <div class="card col-md-5 pt-2" style="width:495px">
+              <img src="./images/yellow-flowers-8297511_1280.jpg" class="card-img-top" alt="yellow flowers" style="height: 240px">
+              <div class="card-body">
+                <h5 class="card-title"> Portfolio Project</h5>
+                <p class="card-text">Applying fundamental knowledge of web development with HTML and CSS to build a personal portfolio to showcase projects </p>
+                <a href="https://chae-lee.github.io/portfolio/" target="_blank" class="btn btn-primary">Click to view project</a>
+              </div>
+            </div>
+            <div class="card col-md-5 pt-2" style="width:495px">
+              <img src="./images/02-portfolio-1.jpg" class="card-img-top" alt="LED image" style="height: 240px">
+              <div class="card-body placeholder-glow">
+                <h5 class="card-title placeholder"> Placeholder</h5>
+                <p class="card-text">Details coming soon!</p>
+                <a href="#" target="_blank" class="btn btn-primary">Click to view project</a>
+              </div>
+            </div>
+            <div class="card col-md-5 pt-2" style="width:495px">
+              <img src="./images/02-portfolio-2.jpg" class="card-img-top" alt="calculator image" style="height: 240px">
+              <div class="card-body placeholder-glow">
+                <h5 class="card-title placeholder"> Placeholder</h5>
+                <p class="card-text">Details coming soon!</p>
+                <a href="#" target="_blank" class="btn btn-primary">Click to view project</a>
+              </div>
+            </div>
+            <div class="card col-md-5 pt-2" style="width:495px">
+              <img src="./images/02-portfolio-4.jpg" class="card-img-top" alt="beach with a surfer" style="height: 240px">
+              <div class="card-body placeholder-glow">
+                <h5 class="card-title placeholder"> Placeholder</h5>
+                <p class="card-text">Details coming soon!</p>
+                <a href="#" target="_blank" class="btn btn-primary">Click to view project</a>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- contact -->
-    <section class="page-section-contact" id="contact">
-      <div id="contactMe">
-        <h3>Contact Me</h3>
+<!-- Portfolio container without using bootstrap cards only Grid (use this for a different display)
+    <section class="page-section" id="work">
+      <div class="container text-center" id="workTitle">
+        <div class="row">
+          <div class="col-sm-3 mt-3">
+            <h3>Work</h3>
+          </div>
+          <div class="col-sm-9 mt-3" id="workExamples">
+            <div>
+              <div id="workGridArea" class="row">
+                <div class="col-md-12 border border-primary border-4 " style="background-image: url(./images/marketplace.jpeg); background-size: cover; height: 220px; width: 960px;"> 
+                  <div id="refactor">
+                    <a href="https://chae-lee.github.io/Market-website-refactor/" target="_blank"> Market Website Refactor</a>
+                  </div>
+                </div>
+                <div class="col-md-5 mt-3 mr-4 border border-primary border-4" style="background-image: url(./images/02-portfolio-1.jpg); background-size: cover; height: 220px; width: 480px;">
+                  <div id="LED" class="workGridArea">
+                    LED
+                  </div>
+                </div>
+                <div class="col-md-5 mt-3 ms-1 border border-primary border-4 " style="background-image: url(./images/02-portfolio-2.jpg); background-size: cover; height: 220px; width: 480px;">
+                  <div id="calculator" class="workGridArea">
+                    Calculator
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3 border border-primary border-4" style="background-image: url(./images/02-portfolio-3.jpg); background-size: cover; height: 220px; width: 480px;">
+                  <div id="pastelPuzzles" class="workGridArea">
+                    <div> Pastel Puzzles </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3 ms-1 border border-primary border-4" style="background-image: url(./images/02-run-buddy.jpg); background-size: cover; height: 220px; width: 480px;">
+                  <div id="runBuddy" class="workGridArea">
+                    <a href=""><div> Run Buddy </div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="contactLinks">
-        <ul>
-          <a href="mailto:katelee1129@gmail.com" target="_blank"> Email </a>
-          <a href="#">katelee@website.com</a>
-          <a href="https://github.com/Chae-Lee" target="_blank">GitHub</a>
-          <a href="#"> Linkedin </a>
-        </ul>
+    </section> -->
+
+<!-- Skills Sections -->
+<section class="page-section pt-5" id="skills">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-3 text-primary-emphasis mt-3">
+        <h3>Skills</h3>
       </div>
-      
-    </section>
+      <div class="col-sm-9 text-start mt-3 fs-4"> 
+        <p> The following skill will be gained through the Frontend Web Development bootcamp: </p>
+          <li>HTML, CSS, and JavaScript</li>
+          <li>Bootstrap, JQuery, JSON, AJAX</li>
+          <li>Frameworks: Node.js, ES6, OOP, React</li>
+          <li>Manipulate page information and create interactivity using jQuery and React</li>
+          <li>Build modern web applications using Node.js and React</li>
+          <li>Deploy web-based applications using Netlify</li>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Me Section-->
+    <footer class="page-section-contact" id="contact">
+        <div class="container text-center mt-5">
+          <div class="row">
+            <div class="col-sm-3" id="contactMe">
+              <h3>Contact Me</h3>
+            </div>
+            <div class="col-sm-9 text-start" id="contactLinks">
+              <div class="text-center">
+                <a href="mailto:katelee1129@gmail.com" target="_blank" class="ms-5 px-4 btn btn-primary" > Email </a>
+                <a href="#" class="ms-5 px-4 btn btn-primary">katelee@website.com</a>
+                <a href="https://github.com/Chae-Lee" target="_blank" class="ms-5 px-4 btn btn-primary">GitHub</a>
+                <a href="#" class="ms-5 px-4 btn btn-primary"> Linkedin </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

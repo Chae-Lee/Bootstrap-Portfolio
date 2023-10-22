@@ -1,3 +1,52 @@
-container h-75 d-inline-block
+:root {
+  --border:8px solid #81D8D0;
+  --fontColor:#708090;
+  --fontBorder: 3px solid #708090;
+}
 
-position-absolute bottom-0 end-0
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  color:var(--fontColor);
+}
+
+/*Main log & Navbar section */
+.border h2 {
+  padding-left: 40px;
+  padding-right: 10px;
+  text-align: end;
+  color: var(--fontColor);
+  }
+
+/* Jumbotron section */
+.position-sticky {
+  justify-content: end;
+  display: flex;
+}
+
+/* About Me & Work & Contact me section titles */
+h3 {
+  color:var(--fontColor);
+}
+
+.border-primary {
+  border: var(--fontBorder)!important;
+}
+
+/* Portfolio Work section displayed with bootstrap cards */
+.card-img-top {
+  object-fit:cover;
+  object-position: middle;
+}
+
+/*Buttons*/
+.btn-primary {
+  background-color: lightcoral;
+  border-color: lightcoral;
+}
